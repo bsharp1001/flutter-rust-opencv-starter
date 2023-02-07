@@ -16,6 +16,11 @@ pub enum Platform {
     Wasm,
 }
 
+use opencv::{
+    prelude::*,
+    imgproc,
+};
+
 // A function definition in Rust. Similar to Dart, the return type must always be named
 // and is never inferred.
 pub fn platform() -> Platform {

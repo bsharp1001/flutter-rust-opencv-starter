@@ -1,0 +1,5 @@
+[env]
+OPENCV_LINK_LIBS = "libopencv_core,libopencv_dnn,libopencv_ml,libopencv_gapi,libopencv_highgui,libopencv_imgcodecs,libopencv_imgproc,libopencv_video,libopencv_videoio"
+OPENCV_LINK_PATHS = "/Users/bishoy/Downloads/opencv-4.6.0/build/install/sdk/native/libs/arm64-v8a"
+OPENCV_INCLUDE_PATHS = "/Users/bishoy/Downloads/opencv-4.6.0/build/install/sdk/native/jni/include"
+OpenCV_DIR = "/Users/bishoy/Downloads/opencv-4.6.0/build/install/sdk/native/jni/abi-arm64-v8a"

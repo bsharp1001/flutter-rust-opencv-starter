@@ -1,59 +1,10 @@
-# flutter_rust_bridge_template
+# flutter_rust_opencv_prototype
 
-This repository serves as a template for Flutter projects calling into native Rust
-libraries via `flutter_rust_bridge`.
+## IMPORTANT: OpenCV is currently compiled for a real android arm64 -aarch64- device only
 
-## Getting Started
+## WON'T WORK WITH EMULATORS
 
-To begin, ensure that you have a working installation of the following items:
-- [Flutter SDK](https://docs.flutter.dev/get-started/install)
-- [Rust language](https://rustup.rs/)
-- Appropriate [Rust targets](https://rust-lang.github.io/rustup/cross-compilation.html) for cross-compiling to your device
-- For Android targets:
-    - Install [cargo-ndk](https://github.com/bbqsrc/cargo-ndk#installing)
-    - Install Android NDK 22, then put its path in one of the `gradle.properties`, e.g.:
-
-```
-echo "ANDROID_NDK=.." >> ~/.gradle/gradle.properties
-```
-
-- [Web dependencies](http://cjycode.com/flutter_rust_bridge/template/setup_web.html) for the Web
-
-Then go ahead and run `flutter run`! When you're ready, refer to our documentation
-[here](https://fzyzcjy.github.io/flutter_rust_bridge/index.html)
-to learn how to write and use binding code.
-
-Once you have edited `api.rs` to incorporate your own Rust code, the bridge files `bridge_definitions.dart` and `bridge_generated.dart` are generated using the following command:
-
-### Windows
-```
-flutter_rust_bridge_codegen --rust-input native\src\api.rs --dart-output .\lib\bridge_generated.dart --dart-decl-output .\lib\bridge_definitions.dart
-```
-
-### Linux/MacOS/any other Unix
-```
-flutter_rust_bridge_codegen --rust-input native/src/api.rs --dart-output ./lib/bridge_generated.dart --dart-decl-output ./lib/bridge_definitions.dart
-```
-
-## Scaffolding in existing projects
-
-If you would like to generate boilerplate for using `flutter_rust_bridge` in your existing projects,
-check out the [`flutter_rust_bridge` brick](https://brickhub.dev/bricks/flutter_rust_bridge/)
-for more details.
-
-## Disclaimer
-
-This template is not affiliated with flutter_rust_bridge. Please file issues and PRs related to the template here,
-not flutter_rust_bridge.
-
-## License
-
-Copyright 2022 Viet Dinh.
-
-This template is licensed under either of
-- [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0) ([LICENSE-APACHE](LICENSE-APACHE))
-- [MIT license](https://opensource.org/licenses/MIT) ([LICENSE-MIT](LICENSE-MIT))
-
-at your option.
-
-The [SPDX](https://spdx.dev/) license identifier for this project is `MIT OR Apache-2.0`.
+1. connect any android device with arm64 -aarch64- cpu
+2. ensure debugging is enabled
+3. Run `flutter run` and be sure it uses the connected android device
+4. The app should start successfully showing a UI similar to the contest entry's screenshot
